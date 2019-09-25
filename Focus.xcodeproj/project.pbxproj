@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FEBDB5C79F620585FBABC00 /* Pods_Focus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8244DDEA6E20D41D1AD8A8F /* Pods_Focus.framework */; };
+		640E153C22D4EB420089B266 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 640E153B22D4EB420089B266 /* GoogleService-Info.plist */; };
+		640E153E22D4ECDD0089B266 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E153D22D4ECDD0089B266 /* AuthenticationService.swift */; };
+		640E154022D799360089B266 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E153F22D799360089B266 /* DatabaseService.swift */; };
+		640E154222F205630089B266 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E154122F205630089B266 /* CreateProfileViewController.swift */; };
+		640E154422F22D340089B266 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E154322F22D340089B266 /* ProfileViewController.swift */; };
+		641A744122D4E53F005AB954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A744022D4E53F005AB954 /* AppDelegate.swift */; };
+		641A744322D4E53F005AB954 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A744222D4E53F005AB954 /* LoginViewController.swift */; };
+		641A744622D4E53F005AB954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641A744422D4E53F005AB954 /* Main.storyboard */; };
+		641A744922D4E53F005AB954 /* Focus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 641A744722D4E53F005AB954 /* Focus.xcdatamodeld */; };
+		641A744B22D4E540005AB954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641A744A22D4E540005AB954 /* Assets.xcassets */; };
+		641A744E22D4E540005AB954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641A744C22D4E540005AB954 /* LaunchScreen.storyboard */; };
+		64456B5B23103DD700A4F004 /* GroupsDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B5A23103DD700A4F004 /* GroupsDisplayViewController.swift */; };
+		64456B5D23103E0800A4F004 /* GroupCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B5C23103E0800A4F004 /* GroupCreatorViewController.swift */; };
+		64456B5F2313F96200A4F004 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B5E2313F96200A4F004 /* Group.swift */; };
+		64456B63231D2E8D00A4F004 /* UserGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B62231D2E8D00A4F004 /* UserGroupCell.swift */; };
+		64456B65231D747900A4F004 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B64231D747900A4F004 /* GroupViewController.swift */; };
+		64456B68231D864A00A4F004 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B67231D864A00A4F004 /* CreatePostViewController.swift */; };
+		64456B6A231F327F00A4F004 /* UsersForInviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B69231F327F00A4F004 /* UsersForInviteCell.swift */; };
+		64456B6C231F341000A4F004 /* InviteUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B6B231F341000A4F004 /* InviteUsersViewController.swift */; };
+		64456B6E231FD1D100A4F004 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B6D231FD1D100A4F004 /* Post.swift */; };
+		64456B702320767400A4F004 /* PostGroupDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B6F2320767300A4F004 /* PostGroupDisplayCell.swift */; };
+		64456B722321846600A4F004 /* InvitesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B712321846600A4F004 /* InvitesListViewController.swift */; };
+		64456B742321870500A4F004 /* InvitesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B732321870500A4F004 /* InvitesCell.swift */; };
+		64456B7A23218AA200A4F004 /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64456B7923218AA200A4F004 /* Invite.swift */; };
+		64481E41232FCF7200409FAD /* PostGroupPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64481E40232FCF7200409FAD /* PostGroupPicCell.swift */; };
+		64481E43232FFCB700409FAD /* GroupUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64481E42232FFCB700409FAD /* GroupUserCell.swift */; };
+		64481E45233267F800409FAD /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64481E44233267F800409FAD /* EditProfileViewController.swift */; };
+		64481E472333C6E400409FAD /* GroupUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64481E462333C6E300409FAD /* GroupUserProfileViewController.swift */; };
+		6476DBAF2326A32300D18570 /* GroupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6476DBAE2326A32200D18570 /* GroupInfoViewController.swift */; };
+		6484AC6A230B156A0092AA76 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484AC69230B156A0092AA76 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30A46A69BB8746BE8D5D8F8D /* Pods-Focus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focus.release.xcconfig"; path = "Target Support Files/Pods-Focus/Pods-Focus.release.xcconfig"; sourceTree = "<group>"; };
+		640E153B22D4EB420089B266 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		640E153D22D4ECDD0089B266 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		640E153F22D799360089B266 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		640E154122F205630089B266 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		640E154322F22D340089B266 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		641A743D22D4E53F005AB954 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		641A744022D4E53F005AB954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		641A744222D4E53F005AB954 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		641A744522D4E53F005AB954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		641A744822D4E53F005AB954 /* Focus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Focus.xcdatamodel; sourceTree = "<group>"; };
+		641A744A22D4E540005AB954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		641A744D22D4E540005AB954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		641A744F22D4E540005AB954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64456B5A23103DD700A4F004 /* GroupsDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDisplayViewController.swift; sourceTree = "<group>"; };
+		64456B5C23103E0800A4F004 /* GroupCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCreatorViewController.swift; sourceTree = "<group>"; };
+		64456B5E2313F96200A4F004 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		64456B62231D2E8D00A4F004 /* UserGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupCell.swift; sourceTree = "<group>"; };
+		64456B64231D747900A4F004 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		64456B67231D864A00A4F004 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		64456B69231F327F00A4F004 /* UsersForInviteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersForInviteCell.swift; sourceTree = "<group>"; };
+		64456B6B231F341000A4F004 /* InviteUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteUsersViewController.swift; sourceTree = "<group>"; };
+		64456B6D231FD1D100A4F004 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		64456B6F2320767300A4F004 /* PostGroupDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupDisplayCell.swift; sourceTree = "<group>"; };
+		64456B712321846600A4F004 /* InvitesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitesListViewController.swift; sourceTree = "<group>"; };
+		64456B732321870500A4F004 /* InvitesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitesCell.swift; sourceTree = "<group>"; };
+		64456B7923218AA200A4F004 /* Invite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
+		64481E40232FCF7200409FAD /* PostGroupPicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGroupPicCell.swift; sourceTree = "<group>"; };
+		64481E42232FFCB700409FAD /* GroupUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserCell.swift; sourceTree = "<group>"; };
+		64481E44233267F800409FAD /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		64481E462333C6E300409FAD /* GroupUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUserProfileViewController.swift; sourceTree = "<group>"; };
+		6476DBAE2326A32200D18570 /* GroupInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewController.swift; sourceTree = "<group>"; };
+		6484AC69230B156A0092AA76 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7722B5F46A8BFA2D0F99912C /* Pods-Focus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focus.debug.xcconfig"; path = "Target Support Files/Pods-Focus/Pods-Focus.debug.xcconfig"; sourceTree = "<group>"; };
+		B8244DDEA6E20D41D1AD8A8F /* Pods_Focus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		641A743A22D4E53F005AB954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEBDB5C79F620585FBABC00 /* Pods_Focus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC8E11C6397F054BE554A46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7722B5F46A8BFA2D0F99912C /* Pods-Focus.debug.xcconfig */,
+				30A46A69BB8746BE8D5D8F8D /* Pods-Focus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		641A743422D4E53F005AB954 = {
+			isa = PBXGroup;
+			children = (
+				641A743F22D4E53F005AB954 /* Focus */,
+				641A743E22D4E53F005AB954 /* Products */,
+				1CC8E11C6397F054BE554A46 /* Pods */,
+				BF7D600E49EB290C15C9A48C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		641A743E22D4E53F005AB954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				641A743D22D4E53F005AB954 /* Focus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		641A743F22D4E53F005AB954 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				641A745822D4E656005AB954 /* SupportingFiles */,
+				641A745722D4E647005AB954 /* View */,
+				641A745622D4E640005AB954 /* Model */,
+				641A745522D4E63A005AB954 /* Controller */,
+				641A744F22D4E540005AB954 /* Info.plist */,
+				641A744722D4E53F005AB954 /* Focus.xcdatamodeld */,
+				640E153B22D4EB420089B266 /* GoogleService-Info.plist */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		641A745522D4E63A005AB954 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				641A744222D4E53F005AB954 /* LoginViewController.swift */,
+				640E154122F205630089B266 /* CreateProfileViewController.swift */,
+				640E154322F22D340089B266 /* ProfileViewController.swift */,
+				64481E44233267F800409FAD /* EditProfileViewController.swift */,
+				64456B5A23103DD700A4F004 /* GroupsDisplayViewController.swift */,
+				64456B5C23103E0800A4F004 /* GroupCreatorViewController.swift */,
+				64456B64231D747900A4F004 /* GroupViewController.swift */,
+				6476DBAE2326A32200D18570 /* GroupInfoViewController.swift */,
+				64481E462333C6E300409FAD /* GroupUserProfileViewController.swift */,
+				64456B67231D864A00A4F004 /* CreatePostViewController.swift */,
+				64456B6B231F341000A4F004 /* InviteUsersViewController.swift */,
+				64456B712321846600A4F004 /* InvitesListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		641A745622D4E640005AB954 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				640E153D22D4ECDD0089B266 /* AuthenticationService.swift */,
+				640E153F22D799360089B266 /* DatabaseService.swift */,
+				6484AC69230B156A0092AA76 /* User.swift */,
+				64456B5E2313F96200A4F004 /* Group.swift */,
+				64456B6D231FD1D100A4F004 /* Post.swift */,
+				64456B7923218AA200A4F004 /* Invite.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		641A745722D4E647005AB954 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				641A744422D4E53F005AB954 /* Main.storyboard */,
+				64456B62231D2E8D00A4F004 /* UserGroupCell.swift */,
+				64456B69231F327F00A4F004 /* UsersForInviteCell.swift */,
+				64456B6F2320767300A4F004 /* PostGroupDisplayCell.swift */,
+				64481E40232FCF7200409FAD /* PostGroupPicCell.swift */,
+				64456B732321870500A4F004 /* InvitesCell.swift */,
+				64481E42232FFCB700409FAD /* GroupUserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		641A745822D4E656005AB954 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				641A744A22D4E540005AB954 /* Assets.xcassets */,
+				641A744C22D4E540005AB954 /* LaunchScreen.storyboard */,
+				641A744022D4E53F005AB954 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BF7D600E49EB290C15C9A48C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8244DDEA6E20D41D1AD8A8F /* Pods_Focus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		641A743C22D4E53F005AB954 /* Focus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641A745222D4E540005AB954 /* Build configuration list for PBXNativeTarget "Focus" */;
+			buildPhases = (
+				060E59985CF6ABF1F6810BB8 /* [CP] Check Pods Manifest.lock */,
+				641A743922D4E53F005AB954 /* Sources */,
+				641A743A22D4E53F005AB954 /* Frameworks */,
+				641A743B22D4E53F005AB954 /* Resources */,
+				9B65AAE8764B0EE0183BDA1C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Focus;
+			productName = Focus;
+			productReference = 641A743D22D4E53F005AB954 /* Focus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		641A743522D4E53F005AB954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Pepe Daroqui Plaza";
+				TargetAttributes = {
+					641A743C22D4E53F005AB954 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 641A743822D4E53F005AB954 /* Build configuration list for PBXProject "Focus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 641A743422D4E53F005AB954;
+			productRefGroup = 641A743E22D4E53F005AB954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				641A743C22D4E53F005AB954 /* Focus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		641A743B22D4E53F005AB954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641A744E22D4E540005AB954 /* LaunchScreen.storyboard in Resources */,
+				640E153C22D4EB420089B266 /* GoogleService-Info.plist in Resources */,
+				641A744B22D4E540005AB954 /* Assets.xcassets in Resources */,
+				641A744622D4E53F005AB954 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		060E59985CF6ABF1F6810BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Focus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B65AAE8764B0EE0183BDA1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Focus/Pods-Focus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Focus/Pods-Focus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Focus/Pods-Focus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		641A743922D4E53F005AB954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64456B702320767400A4F004 /* PostGroupDisplayCell.swift in Sources */,
+				64481E41232FCF7200409FAD /* PostGroupPicCell.swift in Sources */,
+				64481E43232FFCB700409FAD /* GroupUserCell.swift in Sources */,
+				64456B5F2313F96200A4F004 /* Group.swift in Sources */,
+				641A744322D4E53F005AB954 /* LoginViewController.swift in Sources */,
+				640E154022D799360089B266 /* DatabaseService.swift in Sources */,
+				64456B5B23103DD700A4F004 /* GroupsDisplayViewController.swift in Sources */,
+				64456B6E231FD1D100A4F004 /* Post.swift in Sources */,
+				641A744922D4E53F005AB954 /* Focus.xcdatamodeld in Sources */,
+				64456B5D23103E0800A4F004 /* GroupCreatorViewController.swift in Sources */,
+				64456B7A23218AA200A4F004 /* Invite.swift in Sources */,
+				641A744122D4E53F005AB954 /* AppDelegate.swift in Sources */,
+				6484AC6A230B156A0092AA76 /* User.swift in Sources */,
+				64456B6A231F327F00A4F004 /* UsersForInviteCell.swift in Sources */,
+				64456B68231D864A00A4F004 /* CreatePostViewController.swift in Sources */,
+				64456B6C231F341000A4F004 /* InviteUsersViewController.swift in Sources */,
+				640E154422F22D340089B266 /* ProfileViewController.swift in Sources */,
+				64456B742321870500A4F004 /* InvitesCell.swift in Sources */,
+				6476DBAF2326A32300D18570 /* GroupInfoViewController.swift in Sources */,
+				640E154222F205630089B266 /* CreateProfileViewController.swift in Sources */,
+				64456B65231D747900A4F004 /* GroupViewController.swift in Sources */,
+				64481E472333C6E400409FAD /* GroupUserProfileViewController.swift in Sources */,
+				64456B63231D2E8D00A4F004 /* UserGroupCell.swift in Sources */,
+				640E153E22D4ECDD0089B266 /* AuthenticationService.swift in Sources */,
+				64481E45233267F800409FAD /* EditProfileViewController.swift in Sources */,
+				64456B722321846600A4F004 /* InvitesListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		641A744422D4E53F005AB954 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641A744522D4E53F005AB954 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		641A744C22D4E540005AB954 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641A744D22D4E540005AB954 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		641A745022D4E540005AB954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		641A745122D4E540005AB954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		641A745322D4E540005AB954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7722B5F46A8BFA2D0F99912C /* Pods-Focus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WFS338FJMW;
+				INFOPLIST_FILE = Focus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = upv.Focus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		641A745422D4E540005AB954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A46A69BB8746BE8D5D8F8D /* Pods-Focus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WFS338FJMW;
+				INFOPLIST_FILE = Focus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = upv.Focus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		641A743822D4E53F005AB954 /* Build configuration list for PBXProject "Focus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641A745022D4E540005AB954 /* Debug */,
+				641A745122D4E540005AB954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641A745222D4E540005AB954 /* Build configuration list for PBXNativeTarget "Focus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641A745322D4E540005AB954 /* Debug */,
+				641A745422D4E540005AB954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		641A744722D4E53F005AB954 /* Focus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				641A744822D4E53F005AB954 /* Focus.xcdatamodel */,
+			);
+			currentVersion = 641A744822D4E53F005AB954 /* Focus.xcdatamodel */;
+			path = Focus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 641A743522D4E53F005AB954 /* Project object */;
+}
